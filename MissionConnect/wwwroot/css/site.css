@@ -54,7 +54,7 @@ main {
     width: 100%
 }
 
-.tabStyles {
+#myModal .tabStyles {
     width: 50%;
     text-align: center;
 }
@@ -259,10 +259,17 @@ main {
     vertical-align:center;
 }
 
+/* Sign Up Page */
+.signUpMoreInfo{
+    font-size: 1rem;
+    font-weight: 300;
+}
+.finalSignUp{
+    width: 100%
+}
 /*** Media Queries ***/
-
 /* Extra Small devices (everything smaller then a lanscape phone)*/
-@media (max-width: 543px){
+@media (max-width: 543px) {
     .teamMapContainer {
         height: 200px
     }

@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{3F6FA9DA-1219-4451-AEA7-314300936313}|Default">
   <MonoDevelop.Ide.ItemProperties.MissionConnect PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MissionConnect/wwwroot/css/site.css">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MissionConnect/Pages/SignUp.cshtml">
     <Files>
-      <File FileName="MissionConnect/Pages/Index.cshtml" Line="91" Column="90" />
-      <File FileName="MissionConnect/wwwroot/js/site.js" Line="12" Column="3" />
-      <File FileName="MissionConnect/Pages/_Layout.cshtml" Line="95" Column="22" />
-      <File FileName="MissionConnect/wwwroot/css/site.css" Line="58" Column="11" />
+      <File FileName="MissionConnect/Pages/Index.cshtml" Line="4" Column="13" />
+      <File FileName="MissionConnect/wwwroot/css/site.css" Line="71" Column="23" />
+      <File FileName="MissionConnect/Pages/_Layout.cshtml" Line="16" Column="20" />
+      <File FileName="MissionConnect/Pages/SignUp.cshtml" Line="22" Column="46" />
+      <File FileName="MissionConnect/wwwroot/js/site.js" Line="12" Column="3" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
