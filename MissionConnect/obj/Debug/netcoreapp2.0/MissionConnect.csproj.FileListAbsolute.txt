@@ -1,0 +1,11 @@
+/Users/Casey/Google Drive/School/Advanced Web Dev/Mission Connect Final/MissionConnectFinal/MissionConnect/bin/Debug/netcoreapp2.0/MissionConnect.deps.json
+/Users/Casey/Google Drive/School/Advanced Web Dev/Mission Connect Final/MissionConnectFinal/MissionConnect/bin/Debug/netcoreapp2.0/MissionConnect.runtimeconfig.json
+/Users/Casey/Google Drive/School/Advanced Web Dev/Mission Connect Final/MissionConnectFinal/MissionConnect/bin/Debug/netcoreapp2.0/MissionConnect.runtimeconfig.dev.json
+/Users/Casey/Google Drive/School/Advanced Web Dev/Mission Connect Final/MissionConnectFinal/MissionConnect/bin/Debug/netcoreapp2.0/MissionConnect.dll
+/Users/Casey/Google Drive/School/Advanced Web Dev/Mission Connect Final/MissionConnectFinal/MissionConnect/bin/Debug/netcoreapp2.0/MissionConnect.pdb
+/Users/Casey/Google Drive/School/Advanced Web Dev/Mission Connect Final/MissionConnectFinal/MissionConnect/obj/Debug/netcoreapp2.0/MissionConnect.csprojResolveAssemblyReference.cache
+/Users/Casey/Google Drive/School/Advanced Web Dev/Mission Connect Final/MissionConnectFinal/MissionConnect/obj/Debug/netcoreapp2.0/MissionConnect.csproj.CoreCompileInputs.cache
+/Users/Casey/Google Drive/School/Advanced Web Dev/Mission Connect Final/MissionConnectFinal/MissionConnect/obj/Debug/netcoreapp2.0/MissionConnect.AssemblyInfoInputs.cache
+/Users/Casey/Google Drive/School/Advanced Web Dev/Mission Connect Final/MissionConnectFinal/MissionConnect/obj/Debug/netcoreapp2.0/MissionConnect.AssemblyInfo.cs
+/Users/Casey/Google Drive/School/Advanced Web Dev/Mission Connect Final/MissionConnectFinal/MissionConnect/obj/Debug/netcoreapp2.0/MissionConnect.dll
+/Users/Casey/Google Drive/School/Advanced Web Dev/Mission Connect Final/MissionConnectFinal/MissionConnect/obj/Debug/netcoreapp2.0/MissionConnect.pdb
