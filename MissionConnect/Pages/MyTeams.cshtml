@@ -1,0 +1,81 @@
+﻿@page
+@model MyTeamsModel
+@{
+}
+
+<div class="container" >
+    <div class="row">
+        <div class="col myTeamsHeader">
+            <h2> My Teams</h2>
+        </div>
+    </div>
+
+
+    <div class="row cardPadding">
+  <div class="col-md-4">
+    <div class="card">
+
+     <img class="card-img-top cardImageHeight" src="images/russia-map.gif" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Somewhere, Russia</h5>
+        <a href="team" class="btn btn-primary">Russia Team</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+    <div class="card-img-top" id="cardMap2">
+                </div>
+<!--     <img class="card-img-top" src="images/russia-map.gif" alt="Card image cap">-->
+      <div class="card-body">
+        <h5 class="card-title">Ranger, TX</h5>
+        <a href="team" class="btn btn-primary">Ranger Team</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!--      
+   <div class="col-md-4">
+    <div class="card">
+     <img class="card-img-top" src="images/russia-map.gif" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="teams" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+        
+-->
+
+        <div class="col-md-4">
+    <div class="card">
+     <img class="card-img-top cardImageHeight" src="images/TeamsAddImg.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Start New Team</h5>
+        <!--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+        <a href="#" class="btn btn-primary">New Team</a>
+      </div>
+    </div>
+  </div>
+    </div>
+</div>
+<script>
+      
+      function initMap() {
+        var fhu = {lat: 32.4384669, lng: -98.6383586};
+        var map = new google.maps.Map(document.getElementById('cardMap2'), {
+          zoom: 9,
+          center: fhu
+        });
+        var marker = new google.maps.Marker({
+          position: fhu,
+          map: map
+        });
+      }
+    
+</script>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjIxkvWvevwkxGuiNGChQwRu21_nIxMas&callback=initMap">
+</script>

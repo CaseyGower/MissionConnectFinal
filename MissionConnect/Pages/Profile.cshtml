@@ -1,0 +1,111 @@
+﻿@page
+@model ProfileModel
+@{
+}
+
+<div class="profile-background container">
+    <!--Page is divided into two columns-->
+        <div class="row ">
+            <!--Left Column-->
+            <div class="col-md-4" id="LeftColumn">
+                <div class="sticky-top justify-content-center">
+                    <img src="~/images/ProfilePic1.jpg" class="img-fluid rounded-circle" id="ProfilePicture">
+                    <!--Card with info below picture-->
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="text-center">Billy Joe</h2>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"> <i class="material-icons align-middle">place</i> Macon, Georgia</li>
+                                <li class="list-group-item"> <i class="material-icons align-middle">email</i> BillyJoe42@hotmail.com</li>
+                                <li class="list-group-item"> <i class="material-icons align-middle">label</i> Status: Preparing</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--Center Column-->
+            <div class="col-md-8 mt-5">
+                
+                <!--The center column contains cards stacked on top of each other.-->
+                <!--First Card-->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Bio</h3>
+                    </div>
+                    <div class="card-body">                            
+                        <p>
+                            Hi! My name is Billy Joe, and I am a 30 year-old man with some mission experience, but I am
+                            wanting to become a full-time missionary.
+                            I am currently a Deacon at my home congregation of Merryweather Road Church of Christ.
+                            I currently work as a security contractor.
+                        </p>
+                        <p>Please contact me by email if you would like to see an official resume.</p>
+                    </div>
+                </div>
+                
+                <br/>
+
+                <!--Second Card-->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Past Experience</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">2015 Mission Trip to Iowa</li>
+                            <li class="list-group-item">2016 Mission Trip to Bermuda</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <br/>
+
+                <!--Third Card-->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Areas of Interest</h3>
+                    </div>
+                    <div class="card-body">
+                        
+                        <div id="map"></div>
+                        <br>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Kiev, Ukraine</li>
+                            <li class="list-group-item">Panama City, Panama</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--Right Column-->
+            <div class="col-md-2">
+
+            </div>
+    </div>
+</div>
+
+<script>
+      function initMap() {
+        var kiev = {lat: 50.4021368, lng: 30.2525082};
+        var panama = {lat: 9.0817276, lng: -79.5932245};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 1,
+          center: {lat: 0, lng: 0}
+        });
+        var marker = new google.maps.Marker({
+          position: kiev,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: panama,
+          map: map
+        });
+      }
+</script>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjIxkvWvevwkxGuiNGChQwRu21_nIxMas&callback=initMap">
+</script>

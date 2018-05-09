@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Pages\About.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Pages\Index.cshtml.cs">
+      <DependentUpon>Index.cshtml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\Error.cshtml.cs">
+      <DependentUpon>Error.cshtml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\Profile.cshtml.cs">
+      <DependentUpon>Profile.cshtml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\Connections.cshtml.cs">
+      <DependentUpon>Connections.cshtml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\Teams.cshtml.cs">
+      <DependentUpon>Teams.cshtml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\Search.cshtml.cs">
+      <DependentUpon>Search.cshtml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\MyTeams.cshtml.cs">
+      <DependentUpon>MyTeams.cshtml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\Team.cshtml.cs">
+      <DependentUpon>Team.cshtml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="wwwroot\font\css\open-iconic.css" />
+    <None Remove="Pages\EmptyHTMLFile.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\images\Profile Pictures\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,174 @@
+﻿@page
+@model ConnectionsModel
+@{
+}
+
+<div class="container connections" >
+    
+    <!--Top Row: Page heading and search-->
+    <div class="row my-3 bounce">
+        <div class="col-sm-12">
+            <!--ADD FUNCTIONALITY: need to retrieve # connections--> 
+            <h1>
+                Connections 
+            </h1>
+        </div>
+    </div>
+
+</div>
+
+<!--Main Container-->
+<div class="container connections">
+    <div class="row">
+
+        <!--Left column: Connection Requests and Suggestions-->
+        <div class="col-lg-5">
+            <h4>
+                <!--ADD FUNCTIONALITY: need to retrieve # requests-->Connection Requests
+                <span class="badge badge-secondary">3</span>
+            </h4>
+            <div class="border p-3">
+                <!--ADD FUNCTIONALITY: need to retrieve connections-->
+                <!--These are just static-->
+                <div class="row mt-4 mb-4">
+                    <div class="container w-100">
+                        <div class="connectionRequest1">
+                            <img src="https://randomuser.me/api/portraits/men/7.jpg" class="rounded-circle float-left mr-3 mw-25" style="max-width:100px;">
+                            <h3 class="mb-0">Philip Scott</h3>
+                            <p class="text-truncate">Oak View Church of Christ <br> Oak View, CA</p>
+                            <button type="button" class="btn btn-primary w-25 mr-3 hide-connection">Accept</button>
+                            <button type="button" class="btn btn-secondary w-25 hide-connection">Decline</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4 mb-4">
+                    <div class="container w-100">
+                        <div class="connectionRequest">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg" class="rounded-circle float-left mr-3 mw-25" style="max-width:100px;">
+                            <h3 class="mb-0">Curtis Andrews</h3>
+                            <p class="text-truncate">Oak View Church of Christ <br> Oak View, CA</p>
+                            <button type="button" class="btn btn-primary w-25 mr-3 hide-connection">Accept</button>
+                            <button type="button" class="btn btn-secondary w-25 hide-connection">Decline</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4 mb-4">
+                    <div class="container w-100">
+                        <div class="connectionRequest">
+                            <img src="https://randomuser.me/api/portraits/women/2.jpg" class="rounded-circle float-left mr-3 mw-25" style="max-width:100px;">
+                            <h3 class="mb-0">Kim Garza</h3>
+                            <p class="text-truncate">Copper Avenue Church of Christ <br> Memphis, TN</p>
+                            <button type="button" class="btn btn-primary w-25 mr-3 hide-connection">Accept</button>
+                            <button type="button" class="btn btn-secondary w-25 hide-connection">Decline</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Connection Suggestions-->
+            <!--Hidden on small devices-->
+            <h4 class="mt-5 hide">Suggested Connections</h4>
+            <div class="border p-3 hide">
+                <!--ADD FUNCTIONALITY: need to retrieve suggestions-->
+                <!--These are just static-->
+                <div class="row mt-4 mb-4">
+                    <div class="container w-100">
+                        <div class="connectionRequest">
+                            <img src="https://randomuser.me/api/portraits/men/3.jpg" class="rounded-circle float-left mr-3 mw-25" style="max-width:100px;">
+                            <h3 class="mb-0">Carter Patterson</h3>
+                            <p class="text-truncate">North Anchorage Church of Christ <br>Anchorage, AK</p>
+                            <button type="button" class="btn btn-primary w-25 mr-3 float-right">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4 mb-4">
+                    <div class="container w-100">
+                        <div class="connectionRequest">
+                            <img src="https://randomuser.me/api/portraits/women/4.jpg" class="rounded-circle float-left mr-3 mw-25" style="max-width:100px;">
+                            <h3 class="mb-0">Adrian Jensen</h3>
+                            <p class="text-truncate">Tehran Church of Christ <br>Tehran, Iran</p>
+                            <button type="button" class="btn btn-primary w-25 mr-3 float-right">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Right column: Connections-->
+        <div class="col-lg-7">
+            <div class="row pr-2 pl-2" id="my-connections">
+                <div class="col-lg-5">
+                    <h4>My Connections <!--ADD FUNCTIONALITY: need to sort by option in this dropdown--></h4>
+                </div>
+                <div class="col-lg-7">
+                    <h5 class="float-right">Sort By
+                        <div class="dropdown show d-inline-block">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Most Recent</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Alphabetical</a>
+                                <a class="dropdown-item active" href="#">Most Recent</a>
+                            </div>
+                        </div>
+                    </h5>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                <!--ADD FUNCTIONALITY: need to retrieve connections on search-->
+                    <form class="row p-3">
+                            <input class="form-control col-md-9" type="search" placeholder="Search Connections" aria-label="Search Connections">
+                        <button class="btn btn-outline-success my-2 my-sm-0 col-md-3" type="submit"> Search</button>
+                    </form>
+                </div>
+             </div>
+            
+            <div class="border p-3">
+                <!--ADD FUNCTIONALITY: need to retrieve connections-->
+                <!--These are just static-->
+                <div class="connection row mt-4 mb-4">
+                    <div class="container w-100">
+                        <img src="https://randomuser.me/api/portraits/men/17.jpg" class="rounded-circle float-left mr-3 mw-25" style="max-width:100px;">
+                        <h3 class="mb-0">Dylan Fields</h3>
+                        <button type="button" class="btn btn-success w-20 m-2 mr-3 float-right"><span class="hide">Message </span><i class="material-icons ml-2">message</i></button>
+                        <p class="text-truncate">Lagos Church of Christ <br> Lagos, Nigeria</p>
+                    </div>
+                </div>
+                <div class="connection row mt-4 mb-4">
+                    <div class="container w-100">
+                        <img src="https://randomuser.me/api/portraits/women/27.jpg" class="rounded-circle float-left mr-3 mw-25" style="max-width:100px;">
+                        <h3 class="mb-0">Erika Rodriguez</h3>
+                        <button type="button" class="btn btn-success w-20 m-2 mr-3 float-right"><span class="hide">Message </span><i class="material-icons ml-2">message</i></button>
+                        <p class="text-truncate">Sao Paulo Church of Christ <br> Sao Paulo, Brazil</p>
+                    </div>
+                </div>
+                <div class="connection row mt-4 mb-4">
+                    <div class="container w-100">
+                        <img src="https://randomuser.me/api/portraits/women/79.jpg" class="rounded-circle float-left mr-3 mw-25" style="max-width:100px;">
+                        <h3 class="mb-0">Sue Harrison</h3>
+                        <button type="button" class="btn btn-success w-20 m-2 mr-3 float-right"><span class="hide">Message </span><i class="material-icons ml-2">message</i></button>
+                        <p class="text-truncate">Pecan Street Church of Christ <br> Flint, MI</p>
+                    </div>
+                </div>
+                <div class="connection row mt-4 mb-4">
+                    <div class="container w-100">
+                        <img src="https://randomuser.me/api/portraits/women/8.jpg" class="rounded-circle float-left mr-3 mw-25" style="max-width:100px;">
+                        <h3 class="mb-0">Lillie Peterson</h3>
+                        <button type="button" class="btn btn-success w-20 m-2 mr-3 float-right"><span class="hide">Message </span><i class="material-icons ml-2">message</i></button>
+                        <p class="text-truncate">Mckinley Church of Christ <br> Baton Rouge, LA</p>
+                    </div>
+                </div>
+                <div class="connection row mt-4 mb-4">
+                    <div class="container w-100">
+                        <img src="https://randomuser.me/api/portraits/men/51.jpg" class="rounded-circle float-left mr-3 mw-25" style="max-width:100px;">
+                        <h3 class="mb-0">Jessie Jenkins</h3>
+                        <button type="button" class="btn btn-success w-20 m-2 mr-3 float-right"><span class="hide">Message </span><i class="material-icons ml-2">message</i></button>
+                        <p class="text-truncate">Pleasant Valley Church of Christ <br> Birmingham, AL</p>
+                    </div>
+                </div>
+            </div>
+            <!--ADD FUNCTIONALITY: link to search-->
+            <button type="button" class="btn btn-primary btn-lg btn-block mt-5">Find new connections</button>
+        </div>
+    </div>
+</div>

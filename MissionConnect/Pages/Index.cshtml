@@ -1,0 +1,101 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "MissionConnect - Discover Mission Connections";
+}
+
+<div class="jumbotron" >
+    <div class="row" >
+        <div class="col-md-6">
+            <h1 class="" id="app-name"> MissionConnect </h1>
+            <h2 class="text-muted lead" id="tag-line"> Discover and Connect to Missions </h2>
+
+            <hr class="my-4" />
+            
+            <h3 class=""> What is MissionConnect? </h3>
+            <p class="lead" >
+                Simply put, <b>MissionConnect</b> is a place for those involved in global mission to connect. 
+            </p>
+        </div>
+
+        <div class="col-md-6">
+            <img src="~/images/hands-up.jpg" class="img-fluid" /> 
+        </div>
+    </div>
+</div>
+
+
+<div class="container" >
+    <section class="home-section"> 
+        <h3 class=""> What does MissionConnect do? </h3>
+
+            <ol class="lead">
+            <li> Help you find others souls who are interested in forming mission teams </li>
+            <li> Inform you about missionaries worldwide </li>
+            <li> Encourage unity among the kingdom of God </li>
+            </ol>
+
+    </section>
+</div>
+
+<div id="map"></div>
+
+<div class="container" >
+<section class="home-section">
+<div class="container" > 
+        <section class="home-section">
+            <h3 class=""> Why should I use MissionConnect?</h3>
+            <h4 class="lead"> Current Missionary </h4>
+            <p>MissionConnect can help you with recruiting interns and future team members, informing others of the location and nature of your work, and allow you access to view others involved in His mission globally. </p>
+                <!--<a class="btn btn-primary btn-lg" href="#" role="button">Current Missionary</a>
+                <a class="btn btn-secondary btn-lg" href="#" role="button">Future Missionary</a>
+                <a class="btn btn-info btn-lg" href="#" role="button"> Mission Supporter</a> -->
+            
+        </section>
+    </div>
+
+</section>
+</div>
+
+
+<div class="accent-background">
+    <section class="home-section">
+        <div class="container" >
+            <h3> Features </h3>
+        </div>
+
+        
+        
+    </section>
+</div>
+
+
+<div class="container">
+<section class="home-section">
+
+    <h2> Sign Up </h2>
+
+
+    
+</section>
+
+</div>
+
+@section Scripts {
+    <script type="text/javascript" src="/js/discover.js"></script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjIxkvWvevwkxGuiNGChQwRu21_nIxMas">
+    </script>
+
+    <script src="/js/jquery.fittext.js"></script>
+    <script >
+
+    $(document).ready(function () {
+
+        $("#app-name").fitText();
+        $("#tag-line").fitText(1.8);
+    });
+    
+    </script>
+}
