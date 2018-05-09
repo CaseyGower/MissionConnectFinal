@@ -267,6 +267,9 @@ main {
 .finalSignUp{
     width: 100%
 }
+.form-group{
+    margin-top: 1rem;
+}
 /*** Media Queries ***/
 /* Extra Small devices (everything smaller then a lanscape phone)*/
 @media (max-width: 543px) {
